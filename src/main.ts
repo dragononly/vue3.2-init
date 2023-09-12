@@ -2,17 +2,13 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import Antd from 'ant-design-vue';
-import 'ant-design-vue/dist/antd.css';
+import 'ant-design-vue/dist/reset.css';
 import { router } from './router'
 import store from "./store";
 // import VueSocketIO from 'vue-3-socket.io'
 
 const app = createApp(App);
 
-import vue3videoPlay from 'vue3-video-play' // 引入组件
-
-import 'vue3-video-play/dist/style.css' // 引入css
-app.use(vue3videoPlay)
 app.use(Antd);
 app.use(store);
 app.use(router);
